@@ -9,10 +9,8 @@ body{
     box-sizing: border-box;
     margin: 0;
     background-color: var(--background-color);
-    /* text-decoration: none; */
     color: var(--text);
     font-family: 'Roboto Mono', monospace;
-    
 }
 .test{
     display: flex;
@@ -32,7 +30,7 @@ hr, a:hover{
 .underline{
     text-decoration: underline;
 }
-.bio, .navbar-custom, .img-border{
+.intro, .navbar-custom, .img-border{
     box-shadow: 10px 10px var(--darker-purple);
 }
 a{
@@ -55,10 +53,10 @@ a{
             filter: invert(100%);
     margin-left: 20px;
 }
-.navbar-custom, .bio {
+.navbar-custom, .intro {
     background-color: var(--lighter-purple);
 }
-.bio{
+.intro{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -77,12 +75,11 @@ a{
     overflow-wrap: break-word;
     width:  7em;
 }
-
 .img-border{
     padding: 5em;
     border: 2px solid var(--lighter-purple);
     width: 75vw;
-    height: 90vh;
+    height: auto;
 }
 .work-img{
     opacity: .2;
@@ -90,7 +87,6 @@ a{
     position: absolute;
 }
 .About{
-    text-align: center;
     word-wrap:break-word;
     width: 50em;
     height: 70vh;
@@ -112,7 +108,13 @@ a{
     padding-top: 10px;
     margin: 10px;
 }
-@media screen and (min-width: 375px){
+.skill-icons{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,13em);
+}
+@media (max-width: 475px){
     .About{
         width: 80%;
         overflow: auto;
@@ -122,8 +124,25 @@ a{
     }
     .card-body{
         height: auto;
+        overflow: hidden;
+        word-wrap: none;
     }
-
+    .img-border{
+        height: auto;
+    }
+    .skill-icons{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+    .intro{
+        height: auto;
+    }
+    .line{
+        height:  250px;
+    }
 }
+
+
 
 
