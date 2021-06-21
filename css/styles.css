@@ -12,6 +12,9 @@ body{
     /* text-decoration: none; */
     color: var(--text);
     font-family: 'Roboto Mono', monospace;
+    
+}
+.test{
     display: flex;
     flex-direction: column;
     align-items: center;
