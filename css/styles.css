@@ -1,9 +1,20 @@
+:root{
+    --yellow-accent: #FFC107;
+    --darker-purple: #6d43ac;
+    --background-color: #343A40;
+    --text: #E1E8EB;
+    --lighter-purple: #7952B3;
+}
 body{
     box-sizing: border-box;
     margin: 0;
-    background-color: #343A40;
-    color: #E1E8EB;
+    background-color: var(--background-color);
+    /* text-decoration: none; */
+    color: var(--text);
     font-family: 'Roboto Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 nav{
     padding: 10px;
@@ -11,26 +22,19 @@ nav{
 section{
     margin: 30px;
 }
-hr{
-    color:#FFC107;
+hr, a:hover{
+    color: var(--yellow-accent);
+    text-decoration: underline;
 }
 .underline{
     text-decoration: underline;
 }
 .bio, .navbar-custom, .img-border{
-    box-shadow: 10px 10px #6d43ac;
+    box-shadow: 10px 10px var(--darker-purple);
 }
 a{
     text-decoration: none;
     color: #E1E8EB;
-}
-a:hover{
-    color: #FFC107;
-}
-.flex-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 .nav-list{
     display: flex;
@@ -48,8 +52,8 @@ a:hover{
             filter: invert(100%);
     margin-left: 20px;
 }
-.navbar-custom {
-    background-color: #7952B3;
+.navbar-custom, .bio {
+    background-color: var(--lighter-purple);
 }
 .bio{
     display: flex;
@@ -60,12 +64,11 @@ a:hover{
     height: 85vh;
     justify-content: space-evenly;
     padding: 10px;
-    background-color: #7952B3;
 }
 .line{
     width: 3px;
     height: 50vh;
-    background-color: #FFC107;
+    background-color: var(--yellow-accent);
 }
 .wrap{
     overflow-wrap: break-word;
@@ -74,7 +77,7 @@ a:hover{
 
 .img-border{
     padding: 5em;
-    border: 2px solid #7952B3;
+    border: 2px solid var(--lighter-purple);
     width: 75vw;
     height: 90vh;
 }
@@ -101,6 +104,11 @@ a:hover{
     flex-direction: column;
     margin-bottom: 1em;
 }
+.card-body, .card{
+    background-color: var(--lighter-purple) ;
+    padding-top: 10px;
+    margin: 10px;
+}
 @media screen and (min-width: 375px){
     .About{
         width: 80%;
@@ -108,6 +116,9 @@ a:hover{
     }
     .contact-text .email{
         word-wrap: break-word;
+    }
+    .card-body{
+        height: auto;
     }
 
 }
