@@ -123,8 +123,7 @@ a{
         word-wrap: break-word;
     }
     .card-body{
-        height: auto;
-        overflow: hidden;
+        overflow: auto;
         word-wrap: none;
     }
     .img-border{
