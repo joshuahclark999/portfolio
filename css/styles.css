@@ -130,7 +130,7 @@ a{
     .img-border{
         height: auto;
     }
-    .skill-icons{
+    .skill-icons, .contact-links{
         display: flex;
         flex-direction: column;
         margin: 5px;
@@ -141,6 +141,7 @@ a{
     .line{
         height:  250px;
     }
+    
 }
 
 
