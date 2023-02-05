@@ -33,6 +33,7 @@ hr, a:hover{
 .intro, .navbar-custom, .img-border{
     box-shadow: 10px 10px var(--darker-purple);
 }
+
 a{
     text-decoration: none;
     color: #E1E8EB;
@@ -103,6 +104,9 @@ a{
     flex-direction: column;
     margin-bottom: 1em;
 }
+.card {
+    box-shadow: 10px 10px var(--background-color);
+}
 .card-body, .card{
     background-color: var(--lighter-purple) ;
     padding-top: 10px;
@@ -115,8 +119,9 @@ a{
     grid-template-rows: repeat(3,13em);
     place-items: center;
 }
-.skill-icons:hover{
+.make-bigg:hover{
     animation: icon-size-change 2s ease-in-out;
+    
 }
 @keyframes icon-size-change{
     0%{
